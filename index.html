@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>海斗助手 · 法律信息</title>
+    <style>
+      :root { --ink:#1c2633; --muted:#5d6b7c; --line:#dde3ec; --bg:#f7f8fb; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: radial-gradient(700px 400px at 15% 0%, #e9eef7, transparent 65%), var(--bg);
+        color: var(--ink);
+        font: 16px/1.8 "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+      }
+      .card {
+        width: min(680px, 100%);
+        padding: 38px 34px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 18px 50px rgba(28, 38, 51, 0.08);
+      }
+      .badge {
+        display: inline-block;
+        padding: 4px 10px;
+        border: 1px solid #e2d3af;
+        border-radius: 999px;
+        color: #8a5d13;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+      }
+      h1 { margin: 16px 0 6px; font-size: 30px; }
+      p { color: var(--muted); }
+      .links { display: grid; gap: 10px; margin-top: 26px; }
+      a.link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 15px 16px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        color: var(--ink);
+        text-decoration: none;
+        transition: border-color 0.15s ease, background 0.15s ease;
+      }
+      a.link:hover { border-color: #c8aa6e; background: #fbf8f1; }
+      a.link b { display: block; font-size: 15px; }
+      a.link span { color: var(--muted); font-size: 12px; }
+      a.link em { font-style: normal; color: #8a5d13; }
+      footer { margin-top: 26px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <span class="badge">海斗助手 · ARAM COMPANION</span>
+      <h1>法律信息</h1>
+      <p>本页面用于公开海斗助手的隐私政策与服务条款，供用户和商店审核访问。</p>
+
+      <div class="links">
+        <a class="link" href="privacy.html">
+          <span><b>隐私政策</b><span>我们处理哪些数据、如何使用和删除</span></span>
+          <em>查看 →</em>
+        </a>
+        <a class="link" href="terms.html">
+          <span><b>服务条款</b><span>使用许可、第三方服务、订阅与免责声明</span></span>
+          <em>查看 →</em>
+        </a>
+      </div>
+
+      <footer>
+        海斗助手是非官方第三方应用，与 Riot Games 无隶属或认可关系。
+      </footer>
+    </div>
+  </body>
+</html>
